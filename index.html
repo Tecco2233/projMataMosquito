@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>mama mosca</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="buttons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Zen+Kaku+Gothic+New:wght@300&family=Zen+Kurenaido&display=swap');
+
+        body {
+            background-image: url('imagens/bg2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 20%;
+            overflow: hidden;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+        }
+
+        select {
+            margin-top: 80%;
+        }
+
+        option{
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+        }
+    </style>
+</head>
+
+<body> 
+    <center>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <div class="mb-2">
+                        <select class="form-control" id="nivel">
+                            <option value="">- SELECIONE A DIFICULDADE -</option>
+                            <option value="facil"> facin facin</option>
+                            <option value="normal"> mediocre </option>
+                            <option value="dificil"> quero sofrer</option>
+                            <option value="masoquismo"> masoquismo de proplayer</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button onclick="IniciarJogo()" class="btn btn-danger btn-lg btn-radius">
+            Iniciar Jogo </button>
+
+    </center>
+</body>
+
+<script>
+    function IniciarJogo() {
+        var nivel = document.getElementById('nivel').value
+        if (nivel === '') {
+            alert('Selecione um nivel para iniciar o jogo')
+            return false
+        }
+        window.location.href = 'app.html?' + nivel
+    }   
+</script>
+
+</html>

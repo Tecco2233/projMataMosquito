@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GANHOU</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="buttons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Zen+Kaku+Gothic+New:wght@300&family=Zen+Kurenaido&display=swap');
+
+        body {
+            background-image: url('imagens/vitoria.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            padding-top: 40%;
+            overflow: hidden;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+        }
+
+        button {
+            margin-bottom: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <p>Você fez </p> <span id="pontuacao"></span> <p> pontos!</p>
+        <button onclick="window.location.href ='index.html'" class="btn btn-info btn-lg btn-radius"> Jogar de Novo </button>
+    </center>
+</body>
+
+<script>
+    document.getElementById('pontuacaoFinal').value = pontos
+    
+    var pontuacaoFinal = window.location.search
+    pontuacaoFinal = pontuacaoFinal.replace('?', '')
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>joguinho</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body onresize="ajustaTamanho()">
+    <div class="painel">
+        <div class="vidas">
+            <img src="imagens/coracao_cheio.png" id="v1" draggable="false">
+            <img src="imagens/coracao_cheio.png" id="v2" draggable="false">
+            <img src="imagens/coracao_cheio.png" id="v3" draggable="false">
+        </div>
+    </div>
+
+    <div class="tempo">
+        Tempo restante: <span id="cronometro"></span> &nbsp;&nbsp;
+    </div>
+
+    <div class="pontos">
+        Pontuação: <span id="pontuacao"></span>
+    </div>
+</body>
+<script src="jogo.js"></script>
+<script>
+    document.getElementById('cronometro').innerHTML = tempo
+
+    var criaMosca = setInterval(function () {
+        posicaoMosca()
+    }, tempoMosca);
+</script>
+
+</html>

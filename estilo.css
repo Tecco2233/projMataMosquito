@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Zen+Kaku+Gothic+New:wght@300&family=Zen+Kurenaido&display=swap');
+
+*{
+    cursor: url('imagens/mata_mosca.png') 30 30, auto;
+}
+
+
+/*///////BODY///////*/
+body{
+    background-image: url('imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    overflow: hidden;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+/*///////MOSCAS///////*/
+.mosca1{
+    width: 85px;
+    height: 85px;
+}
+
+.mosca2{
+    width: 28px;
+    height: 28px;
+}
+
+.mosca3{
+    width: 150px;
+    height: 150px;
+}
+
+.mosca4{
+    width: 30px;
+    height: 30px;
+}
+
+.mosca5{
+    width: 70px;
+    height: 70px;
+}
+
+.mosca6{
+    width: 200px;
+    height: 200px;
+}
+
+.mosca7{
+    width: 55px;
+    height: 55px;
+}
+
+.mosca1, .mosca2, .mosca3, .mosca4, .mosca5, .mosca6, .mosca7, .tempo, .pontos, .pontuacao, .vida, .painel, #v1, #v2, #v3{
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+
+.ladoB{
+    transform: scaleX(-1);
+}
+
+/*///////PAINEL///////*/
+.painel{
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    bottom: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vida{
+    float: left;
+}
+
+.tempo, .pontos{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
